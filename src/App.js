@@ -1,5 +1,4 @@
 import './App.css';
-import ToDoItem from './toDoItem';
 import ToDoList from './toDoList';
 
 
