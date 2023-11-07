@@ -5,12 +5,6 @@ import ToDoItem from "./item";
 const ToDoList = () => {
     const [toDoList, setToDoList] = useState([]);
 
-    const handleDelete = (index) => {
-        // Create a copy of the current toDoList
-        const updatedList = [...toDoList];
-        updatedList.splice(index, 1); // Remove the item at the specified index
-        setToDoList(updatedList); // Update the state with the updated list
-    };
 
 
     return (
@@ -23,7 +17,10 @@ const ToDoList = () => {
 
                                 <ToDoItem
                                     key={index}
+                                    index={index}
                                     item={item}
+                                    toDoList={toDoList}
+                                    setToDoList={setToDoList}
                                 />
                         )
                     })}
