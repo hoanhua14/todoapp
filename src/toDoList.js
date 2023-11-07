@@ -1,12 +1,12 @@
 import { useState } from "react";
-import ToDoItem from "./toDoItem";
+import AddToDoItem from "./toDoItem";
 
 const ToDoList = () => {
     const [toDoList, setToDoList] = useState([]);
 
     return (
         <>
-            <div><ToDoItem setToDoList={setToDoList} toDoList={toDoList} /></div>
+            <div><AddToDoItem setToDoList={setToDoList} toDoList={toDoList} /></div>
             <div>To Do List:
                 <ul>
                     {toDoList.map((item, index) => {

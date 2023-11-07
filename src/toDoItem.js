@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ToDoItem = (props) => {
+const AddToDoItem = (props) => {
     const [item, setItem] = useState('');
 
     const handleAdd = (e) => {
@@ -19,4 +19,4 @@ const ToDoItem = (props) => {
     )
 }
 
-export default ToDoItem;
+export default AddToDoItem;
